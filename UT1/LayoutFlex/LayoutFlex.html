@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Plantilla Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*  fuente https://www.w3schools.com/html/html_layout.asp */
+        * {
+            box-sizing: border-box;
+            /* Los pixeles incluíran el borde o padding que tenga la caja */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de la cabecera*/
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crea dos columnas / cajas que flotan una junto a la otra */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* Sólo de demostración */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Estilo de la lista dentro del menú */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* Sólo de demostración */
+        }
+
+        /* Clear floats después de las columnas */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo del pie */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Diseño Responsive: En pantallas pequeñas hace que las dos columnas / cajas se apilen una sobre la otra en lugar de una al lado de la otra */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Layout Float</h2>
+    <p> En este ejemplo, hemos creado un encabezado, dos columnas / cuadros y un pie de página. En pantallas más
+        pequeñas, las columnas se apilarán una encima de la otra. </p>
+    <p> Cambie el tamaño de la ventana del navegador para ver el efecto de respuesta (aprenderá más sobre esto en
+        nuestro el capítulo, HTML Resposive).</p>
+
+    <header>
+        <h2>Ciudades</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>London</h1>
+
+            <p> Londres es la capital de Inglaterra. Es la ciudad más poblada del Reino Unido, con un área metropolitana
+                de más de 13 millones de habitantes. </p>
+            <p> De pie en el río Támesis, Londres ha sido un importante asentamiento durante dos milenios, y su historia
+                se remonta a su fundación por los romanos, que la llamaron Londinium. </p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>
