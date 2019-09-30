@@ -11,4 +11,4 @@ $resultado = $resultado . "<br>La suma con \$a=12 \$b=100 y \$c=200 es " . prueb
 
 include "includes/vista_resultado.php";
 
-?>-
+?>

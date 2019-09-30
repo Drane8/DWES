@@ -5,8 +5,8 @@ echo "<form action='' method='get' >";
 echo "<div>";
 for ($i = 1; $i <= 10; $i++) {
     echo "<label> Botón $i</label> ";
-    echo "<input type='submit' name='bEd$i' value ='Editar' /> ";
-    echo "<input type='submit' name='bBo$i' value ='Borrar' /><br> ";
+    echo "<input type='submit' name='btnEditar$i' value ='Editar' /> ";
+    echo "<input type='submit' name='btnBorrar$i' value ='Borrar' /><br> ";
 }
 echo "</div></form>";
 
