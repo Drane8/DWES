@@ -21,7 +21,7 @@ include "includes/cabecera.php";
 saludarPersonalizado();
 echo "<hr/>";
 saludar();
-sdfpogksdofpgkdsofpkg
 
 include "includes/pie.php";
+
 ?>
