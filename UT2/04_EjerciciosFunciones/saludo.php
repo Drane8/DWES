@@ -22,5 +22,6 @@ saludarPersonalizado();
 echo "<hr/>";
 saludar();
 
+
 include "includes/pie.php";
 ?>
