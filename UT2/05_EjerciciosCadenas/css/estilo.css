@@ -86,7 +86,7 @@ footer {
 
 /* Estilos añadidos por los ejercicios */
 
-.texto {
+span.texto {
     color:chocolate;
     font-weight: bold;
     margin-bottom: 1.5em;
