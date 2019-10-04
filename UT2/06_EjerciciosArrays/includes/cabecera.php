@@ -18,9 +18,11 @@
     </header>
 
     <nav>
-        <a href="#">Enlace 1</a>
-        <a href="#">Enlace 2</a>
-        <a href="#">Enlace 3</a>
+        <a href="uno.php">uno.php</a>
+        <a href="dos.php">dos.php</a>
+        <a href="tres.php">tres.php</a>
+        <a href="cuatro.php">cuatro.php</a>
+        <a href="cinco.php">cinco.php</a>
     </nav>
 
     <main>
