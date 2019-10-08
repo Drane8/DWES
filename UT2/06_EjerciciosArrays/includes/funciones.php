@@ -6,4 +6,8 @@
         print_r($array);
         echo "</pre>";
     }
+
+    function obtenerValor($key){
+        
+    }
 ?>
