@@ -23,7 +23,7 @@ verArray(array_keys($paises));
 echo "<h3>Capitales de EU</h3>";
 verArray(array_values($paises));
 
-echo "El pais es <span class='texto'>" . array_search('Atenas', $paises) . "</span";
+echo "El pais es <span class='texto'>" . array_search('Atenas', $paises) . "</span>";
 
 include "includes/pie.php";
 ?>

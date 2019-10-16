@@ -9,6 +9,12 @@ function verARRAY($ARRAY)
 
 //function validar1:
 
+/**
+ * Valida un array segun unas reglas predeterminadas
+ *
+ * @param array $array array a validar
+ * @return void
+ */
 function validar1($array)
 {
     $errores = array();
@@ -45,6 +51,13 @@ function validar1($array)
 // se incluye en el ARRAY de errores el mensaje de error
 // Devuelve el ARRAY errores
 
+/**
+ * Valida un array segun las reglas pasadas por el usuario
+ *
+ * @param array $array array a validar
+ * @param array $reglas reglas con las que validar
+ * @return void
+ */
 function validar2($array, $reglas)
 {
     $errores = array();
@@ -52,10 +65,11 @@ function validar2($array, $reglas)
         if (!empty($condiciones['required']) && (empty($array[$campo]) == $condiciones['required'])) {
             $errores[$campo] = "error, $campo requerido";
         }
-        if (!empty($array[$campo]) && ($array[$campo] < $condiciones['min'])) {
-            $errores[$campo] = "error, ". $array[$campo] . " menor que" . $condiciones['min'];
+        if (isset($condiciones['min']) && !empty($array[$campo]) && ($array[$campo] < $condiciones['min'])) {
+            $errores[$campo] = "error, " . $array[$campo] . " menor que " . $condiciones['min'];
         }
     }
 
     return $errores;
 }
+?>
