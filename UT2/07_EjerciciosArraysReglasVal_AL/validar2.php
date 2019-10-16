@@ -4,14 +4,26 @@ include "includes/funciones_AL.php";
 include "includes/cabecera.php";
 
 $camposValidacion = array(
-    array('idcentro' => 'A2', 'nomcentro' => null, 'numempleados' => 19),
-    array('idcentro' => 'C3', 'nomcentro' => null, 'numempleados' => 40),
-    array('idcentro' => null, 'nomcentro' => 'donsikus.sa', 'numempleados' => 12),
+    array(
+        'idcentro' => 'A2',
+        'nomcentro' => null,
+        'numempleados' => null
+    ),
+    array(
+        'idcentro' => 'C3',
+        'nomcentro' => 'progis sl',
+        'numempleados' => 40
+    ),
+    array(
+        'idcentro' => null,
+        'nomcentro' => 'donsikus.sa',
+        'numempleados' => 12
+    ),
 );
 
 $reglasValidacion = array(
     'idcentro' => array('required' => 1),
-    'nomcentro' => array('required' => null),
+    'nomcentro' => array('required' => 0),
     'numempleados' => array('required' => 1)
 );
 
@@ -27,7 +39,7 @@ foreach ($camposValidacion as $key => $valores) {
         verArray($errores);
     }
 }
-
+$reglasValidacion['nomcentro']['required'] = 1;
 $reglasValidacion['numempleados']['min'] = 20;
 
 echo "<hr>Con las reglas: ";
