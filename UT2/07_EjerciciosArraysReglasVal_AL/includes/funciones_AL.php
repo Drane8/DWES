@@ -62,11 +62,11 @@ function validar2($array, $reglas)
 {
     $errores = array();
     foreach ($reglas as $campo => $condiciones) {
+        if (isset($condiciones['min']) && ($array[$campo] < $condiciones['min'])) {
+            $errores[$campo] = "error, " . $array[$campo] . " menor que " . $condiciones['min'];
+        }
         if (!empty($array[$campo]) != $condiciones['required']) {
             $errores[$campo] = "error, $campo requerido";
-        }
-        if (isset($condiciones['min']) && !empty($array[$campo]) && ($array[$campo] < $condiciones['min'])) {
-            $errores[$campo] = "error, " . $array[$campo] . " menor que " . $condiciones['min'];
         }
     }
 
