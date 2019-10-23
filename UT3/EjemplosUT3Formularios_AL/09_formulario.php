@@ -2,7 +2,7 @@
 // puedo dejar vac�o action = "" o action = "?"
 include "includes/cabecera.php";;
 ?>
-<form id='form' action="" method="">
+<form id='form' action="ejemplo09.php" method="post">
     <div>
         <label>Nombre</label>
         <input type="text" name="nombre" /><br />
@@ -19,7 +19,7 @@ include "includes/cabecera.php";;
         </select><br />
 
         <label>&nbsp;</label>
-        <input type="submit" name="" value="" /><br />
+        <input type="submit" name="enviar" value="Enviar" /><br />
 
     </div>
 </form>

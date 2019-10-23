@@ -2,7 +2,7 @@
     // puedo dejar vac�o action = "" o action = "?"
    include "includes/cabecera.php";;
 ?>
-    <form id='form' action="" method="">
+    <form id='form' action="ejemplo08.php" method="post">
 <div>
         <label>Nombre</label>
         <input type="text" name="nombre"  /><br />

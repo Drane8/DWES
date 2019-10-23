@@ -2,7 +2,7 @@
 // puedo dejar vacío action = "" o action = "?"
 include "includes/cabecera.php";
 ?>
-<form id='form' action="" method="">
+<form id='form' action="ejemplo01-02.php" method="post">
 <div>
     <label>Nombre</label>
     <input type="text" name="nombre" value="Pedro" />

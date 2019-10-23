@@ -2,7 +2,7 @@
 
 include "includes/cabecera.php";;
 ?>
-<form id='form' action="" method="">
+<form id='form' action="ejemplo06.php" method="post">
     <div>
         <label>Nombre</label>
         <input type="text" name="nombre" /><br />
@@ -14,7 +14,7 @@ include "includes/cabecera.php";;
             <input type="checkbox" name="baile" value="baile" />Baile<br />
         </div>
         <label>&nbsp;</label>
-        <input type="submit" name="" value="Enviar" /><br />
+        <input type="submit" name="enviar" value="Enviar" /><br />
     </div>
 </form>
 <?php
