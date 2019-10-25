@@ -21,7 +21,25 @@ include "includes/cabecera.php";;
             <input type="radio" name="edad" value="uno" />Entre 1 y 18<br />
             <input type="radio" name="edad" value="dos" />Entre 18 y 65<br />
             <input type="radio" name="edad" value="tres" />Mayor de 65<br />
-        </div>
+        </div><br />
+
+        <div class='uno'>
+            <label>¿A qué sabes jugar?</label><br />
+            <input type="checkbox" name="juegos[]" value="mus" />Mus<br />
+            <input type="checkbox" name="juegos[]" value="escoba" />Escoba<br />
+            <input type="checkbox" name="juegos[]" value="brisca" />Brisca<br />
+            <input type="checkbox" name="juegos[]" value="chinchon" />Chinchon<br />
+        </div><br />
+
+        <label>Comentarios</label>
+        <textarea name="comentarios" rows="6" cols="25">Comentarios</textarea>
+        <br />
+
+        <label>Selecciones su pais </label>
+        <select name="pais">
+            <option selected="selected" value="es">España</option>
+            <option value="uk">Reino Unido</option>
+        </select><br />
 
         <label>¿Cuales son tus colores favoritos?</label><br />
         <select name="colores[]" multiple="multiple">

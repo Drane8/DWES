@@ -1,9 +1,9 @@
 ﻿<?php
-     
-    include "cabecera.php";
+
+include "includes/cabecera.php";
 ?>
-    <form id='form' action="ejemplo03.php" method="post">
-        <div>
+<form id='form' action="ejemplo03.php" method="post">
+    <div>
         <label>Nombre</label>
         <input type="text" name="nombre" required /><br />
         <p>¿Qué aficiones tienes?</p><br />
@@ -15,8 +15,8 @@
         </select><br />
         <label>&nbsp;</label>
         <input type="submit" name="enviar" value="Enviar" /><br />
-        </div>
-    </form>
+    </div>
+</form>
 <?php
-    include "pie.php";
+include "includes/pie.php";
 ?>

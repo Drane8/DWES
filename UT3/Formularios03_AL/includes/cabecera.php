@@ -17,8 +17,10 @@
     </header>
 
     <nav>
-        <a href="#">Enlace 1</a>
-        <a href="#">Enlace 2</a>
+        <a href="vista01.php">Vista 1</a>
+        <a href="vista02.php">Vista 2</a>
+        <a href="vista03.php">Vista 3</a>
+        <a href="vista04.php">Vista 4</a>
     </nav>
 
     <main>

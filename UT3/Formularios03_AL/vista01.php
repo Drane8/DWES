@@ -9,7 +9,7 @@ include "includes/cabecera.php";
         <!-- Las validaciones en cliente son para evitar el viaje de ida y vuelta
         Aunque haya validadciones en el cliente, en el servidor siempre debe haber un control de datos -->
         <label>¿Qué edad tienes?</label><br />
-        <div classs="uno">
+        <div class="uno">
             <input type="radio" name="edad" value="uno" />Entre 1 y 18<br />
             <input type="radio" name="edad" value="dos" />Entre 18 y 65<br />
             <input type="radio" name="edad" value="tres" />Mayor de 65<br />

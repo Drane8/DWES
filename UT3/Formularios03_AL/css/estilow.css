@@ -154,3 +154,9 @@ option{
     min-height: 2em;
     padding: 2px 2px 2px;
 }
+div>img{
+    float:none;
+    position: relative;
+    left: 15%;
+    width: 70%;
+}
