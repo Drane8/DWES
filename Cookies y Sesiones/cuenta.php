@@ -1,19 +1,14 @@
 <?php
-/**
- * Esta página da la opcion al usuario de crear una cuenta o en caso de que ya
- * este creada borrarla par apoder hacer una nueva
- * 
- * @author Daniel García
- */
 include "includes/cabecera.php";
-if (isset($_COOKIE['usuario']) && isset($_COOKIE['password'])) {
+include "includes/funciones.php";
+if (existeCuenta()) {
   ?>
   <div>
     Ya hay una cuenta creada<br>
     <form id='form' action="crear_cuenta.php" method="post">
       <input type="submit" name="borrar" value="Borrar cuenta" /><br />
 
-  </form>
+    </form>
   </div>
 
 <?php

@@ -1,16 +1,29 @@
 <?php
+session_start();
 include "includes/cabecera.php";
-?>
-<form id='form' action="validar.php" method="post">
+if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
+  ?>
   <div>
-    <label>Usuario</label>
-    <input type="text" name="usuario" /><br />
-    <label>Contraseña</label>
-    <input type="password" name="password" /><br />
-    <label>&nbsp;</label>
-    <input type="submit" name="login" value="Login" /><br />
+    Ya estas logueado<br>
+    <form id='form' action="validar.php" method="post">
+      <input type="submit" name="logout" value="Log out" /><br />
+
+    </form>
   </div>
-</form>
 <?php
+} else {
+  ?>
+  <form id='form' action="validar.php" method="post">
+    <div>
+      <label>Usuario</label>
+      <input type="text" name="usuario" required /><br />
+      <label>Contraseña</label>
+      <input type="password" name="password" required /><br />
+      <label>&nbsp;</label>
+      <input type="submit" name="login" value="Login" /><br />
+    </div>
+  </form>
+<?php
+}
 include "includes/pie.php";
 ?>

@@ -12,16 +12,14 @@
 <body>
 
     <header>
-        <img src='img\logo.png' width="85" height="70" alt="El logo de Mª Ana Sanz" />
-        <h1>Cookies y sesiones</h1>
+        <a href="contador_visitas.php" class="logo">Cookies y sesiones</a>
     </header>
 
-    <nav>
-        <a href="contador_visitas.php">Contador Visitas</a>
-        <a href="cuenta.php">Crear cuenta</a>
-        <a href="login.php">Login</a>
-        <a href="compra.php">Compra</a>
-    </nav>
 
     <main>
+        <nav>
+            <a href="contador_visitas.php">Contador Visitas</a>
+            <a href="cuenta.php">Crear cuenta</a>
+            <a href="login.php">Login</a>
+        </nav>
         <section>
