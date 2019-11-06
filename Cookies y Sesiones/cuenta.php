@@ -7,7 +7,7 @@ document.getElementById('cuenta').classList.add('active');
 if (existeCuenta()) {
   ?>
   <div>
-    Ya hay una cuenta creada<br>
+    Ya hay una cuenta creada<br><br><br>
     <form id='form' action="crear_cuenta.php" method="post">
       <input type="submit" name="borrar" value="Borrar cuenta" /><br />
 

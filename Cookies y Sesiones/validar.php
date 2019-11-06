@@ -7,10 +7,10 @@ if (isset($_POST['logout'])) {
     header("location: login.php");
 } elseif (isset($_POST['login'])) {
     if (comprobarLogin($_POST['usuario'], $_POST['password'])) {
-        $_SESSION['login'] = true;
-        echo "Logueado con exito";
+        $_SESSION['login'] = "";
+        echo "<div>Logueado con exito</div>";
     } else {
-        echo "Datos de login incorrectos<br><a href='login.php'>Volver al login</a>";
+        echo "<div>Datos de login incorrectos<br><a href='login.php'>Volver al login</a></div>";
     }
 } else {
     header("location: login.php");

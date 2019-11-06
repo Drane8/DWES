@@ -1,3 +1,5 @@
 https://www.thoughtco.com/the-difference-between-cookies-and-sessions-2693956
 http://idesweb.es/proyecto/proyecto-prac09-php-cookies-sesiones
 https://templated.co/p/9822153616677876
+
+funciones usadas setcookie, sessionstart,

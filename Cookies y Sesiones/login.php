@@ -4,10 +4,10 @@ include "includes/cabecera.php";
 echo "<script>
 document.getElementById('login').classList.add('active');
 </script>";
-if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
+if (isset($_SESSION['login'])) {
   ?>
   <div>
-    Ya estas logueado<br>
+    Ya estas logueado<br><br><br>
     <form id='form' action="validar.php" method="post">
       <input type="submit" name="logout" value="Log out" /><br />
 
