@@ -15,11 +15,12 @@
         <a href="contador_visitas.php" class="logo">Cookies y sesiones</a>
     </header>
 
+    <nav>
+        <a href="contador_visitas.php" id="visita">Contador Visitas</a>
+        <a href="cuenta.php" id="cuenta">Crear cuenta</a>
+        <a href="login.php" id="login">Login</a>
+    </nav>
 
     <main>
-        <nav>
-            <a href="contador_visitas.php">Contador Visitas</a>
-            <a href="cuenta.php">Crear cuenta</a>
-            <a href="login.php">Login</a>
-        </nav>
+
         <section>

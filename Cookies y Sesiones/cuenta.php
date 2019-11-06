@@ -1,6 +1,9 @@
 <?php
 include "includes/cabecera.php";
 include "includes/funciones.php";
+echo "<script>
+document.getElementById('cuenta').classList.add('active');
+</script>";
 if (existeCuenta()) {
   ?>
   <div>

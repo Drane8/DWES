@@ -18,7 +18,7 @@ function existeCuenta()
  * @param string $user
  * @return boolean
  */
-function comprobarLogin($pass, $user)
+function comprobarLogin($user, $pass)
 {
     return (existeCuenta()) && ($user == $_COOKIE['usuario'] &&
         $pass == $_COOKIE['password']);

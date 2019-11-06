@@ -1,6 +1,9 @@
 <?php
 session_start();
 include "includes/cabecera.php";
+echo "<script>
+document.getElementById('login').classList.add('active');
+</script>";
 if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
   ?>
   <div>

@@ -3,10 +3,16 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+    font-family: "Source Sans Pro", Helvetica, sans-serif
 }
 
 body {
-    background-color: gainsboro;
+    background: url(../img/bg.jpg) #212931;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    
 }
 a.logo{
     -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
@@ -38,115 +44,124 @@ header {
     text-align: center;
 }
 
-header img {
-    float: left;
-}
-
 nav {
-    background-color: #333;
+    background-color: white;
     overflow: hidden;
+    width: 80%;
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.176);
 }
-
 nav a {
-    color: #f2f2f2;
     display: block;
     float: left;
     padding: 10px 16px;
     text-align: center;
     text-decoration: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    display: block;
+    font-size: 0.8rem;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav a.active{
+    color:black;
+    background-color: white;
 }
 
+nav a.active:hover{
+    background-color: white;
+}
 nav a:hover {
-    background-color: #ddd;
-    color: black;
+    color: #18bfef;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 main {
-    background: #f0f0f0;
+    background: white;
     margin: 0 auto;
     width: 80%;
+    overflow: hidden;
+    min-height: 20em;
 }
 
 section {
     float: left;
-    padding: 15px;
     width: 100%;
+    min-height: 20em;
 }
 
 footer {
-    background-color: #777;
-    border-bottom: 6px double#444;
-    border-top: 6px double #444;
+    background-color: #e0dfdf;
     clear: left;
-    color: white;
+    color: grey;
     padding: 5px;
     text-align: center;
+    width:80%;
+    margin: 0 auto;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
 input[type=text], input[type='password'], select {
     width: 100%;
-    padding: 12px 20px;
+    padding: 8px 10px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border: 1px solid rgb(82, 82, 82, 0.6);
+    background-color: rgb(167, 167, 167, 0.6);
 }
 
 input[type=submit] {
     width: 100%;
-    background-color: rgb(120, 145, 121);
+    background-color: #1cb6e0;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer ;
+    text-transform: uppercase;
+    font-weight: bold;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    
 }
 
 input[type=submit]:hover {
-    background-color: #9eb4af;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: #57c7e6;
+}
+label{
+    font-size: 0.8em;
 }
 
 div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
+    padding-top: 3em;
 }
 
 div .uno {
     background-color: #dfd7d7;
 }
 
-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-}
-
-input[type=radio] {
-    width: 2em;
-    margin-left: 9em;
-}
-
-input[type='checkbox'] {
-    width: 2%;
-    margin: 8px;
-    margin-left: 9em;
-}
-select{
-    padding: 10px;
-    height: 5em;
-}
-option{
-    min-height: 2em;
-    padding: 2px 2px 2px;
-}
 div>img{
     float:none;
     position: relative;
@@ -156,13 +171,11 @@ div>img{
 
 div.izquierda{
     width:50%;
-    position: relative;
+    position: absolute;
     top:0;
     left:0;
     bottom:0;
     border-right: 1px solid black;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
     text-align: center;
 }
 div.derecha{
@@ -170,12 +183,12 @@ div.derecha{
     position: absolute;
     left:50%;
     top: 0;
+    bottom:0;
     border-left: 1px solid black;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
     text-align: center;
 }
 div.texto{
     position: relative;
     padding: 0;
+    min-height: 20em;
 }
