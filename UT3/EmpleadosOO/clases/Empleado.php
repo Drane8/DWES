@@ -1,5 +1,7 @@
 <?php
 
+namespace NsEmpresa;
+
 abstract class Empleado
 {
 

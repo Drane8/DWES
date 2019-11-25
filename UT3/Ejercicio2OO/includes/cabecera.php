@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <a href="contador_visitas.php" class="logo">Cookies y sesiones</a>
+        <a href="index.php" class="logo">Ejercicio clases</a>
     </header>
 
     <nav>

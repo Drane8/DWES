@@ -1,5 +1,8 @@
 <?php
 
+namespace NsEmpresa;
+
+
 include_once "clases/Empleado.php";
 
 class EmpleadoPorComision extends Empleado
