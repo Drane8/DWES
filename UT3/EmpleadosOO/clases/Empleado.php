@@ -2,6 +2,9 @@
 
 namespace NsEmpresa;
 
+/**
+ * Clase abstracta que simula un Empleado
+ */
 abstract class Empleado
 {
 
@@ -9,6 +12,13 @@ abstract class Empleado
     private $apellido;
     private $numeroSeguroSocial;
 
+    /**
+     * Constructor de la clase empelado
+     *
+     * @param $nombre
+     * @param $apellido
+     * @param $nss
+     */
     public function __construct($nombre, $apellido, $nss)
     {
         $this->primerNombre = $nombre;
@@ -70,10 +80,18 @@ abstract class Empleado
         $this->numeroSeguroSocial = $numeroSeguroSocial;
     }
 
+    /**
+     * Funcion que muestra los datos de un Empleado
+     *
+     * @return void
+     */
     public function mostrar()
     {
         echo "Nombre: " . $this->primerNombre . " " . $this->apellido . ", con NºSS: " . $this->numeroSeguroSocial;
     }
 
+    /**
+     * Definicion de metodo abstracto
+     */
     abstract function ingresos();
 }

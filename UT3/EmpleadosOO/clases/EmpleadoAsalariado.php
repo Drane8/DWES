@@ -2,14 +2,24 @@
 
 namespace NsEmpresa;
 
-
-include_once "clases/Empleado.php";
-
+/**
+ * Clase hija de Empleado que simula a un empleado
+ * asalariado
+ */
 class EmpleadoAsalariado extends Empleado
 {
     private $horasTrabajadas;
     private $precioHoras;
 
+    /**
+     * Constructor de la clase EmpleadoAsalariado
+     *
+     * @param $nombre
+     * @param $apellido
+     * @param $nss
+     * @param $horasTrabajadas
+     * @param $precio
+     */
     public function __construct($nombre, $apellido, $nss, $horasTrabajadas, $precio)
     {
         $this->horasTrabajadas = $horasTrabajadas;
@@ -53,6 +63,9 @@ class EmpleadoAsalariado extends Empleado
         $this->precioHoras = $precioHoras;
     }
 
+    /**
+     * Este metodo calcula los ingresos del empleado
+     */
     public function ingresos()
     {
         return $this->precioHoras * $this->horasTrabajadas;

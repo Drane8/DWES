@@ -2,15 +2,25 @@
 
 namespace NsEmpresa;
 
-
-include_once "clases/Empleado.php";
-
+/**
+ * Clase hija de Empleado que simula a un empleado
+ * que trabaja por comision
+ */
 class EmpleadoPorComision extends Empleado
 {
 
     private $ventasBrutas;
     private $tarifaComision;
 
+    /**
+     * Constructor de la clase EmpleadoPorComision
+     *
+     * @param $nombre
+     * @param $apellido
+     * @param $nss
+     * @param $ventas
+     * @param $tarifa
+     */
     public function __construct($nombre, $apellido, $nss, $ventas, $tarifa)
     {
         $this->ventasBrutas = $ventas;
@@ -54,6 +64,9 @@ class EmpleadoPorComision extends Empleado
         $this->tarifaComision = $tarifaComision;
     }
 
+    /**
+     * Calcula los ingresos del empelado
+     */
     public function ingresos()
     {
         return $this->tarifaComision * $this->ventasBrutas;
