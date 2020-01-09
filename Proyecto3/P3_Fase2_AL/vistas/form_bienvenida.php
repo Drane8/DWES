@@ -9,6 +9,7 @@ if (Input::siEnviado("post"))  // ha habido envío //también if (isset($validad
         echo "<div class='errores'>";
         foreach ($errores as $campo => $mensajeError) {
             echo "<p>$mensajeError</p>\n";
+            unset($_POST[$campo]);
         }
         echo "</div>";
     }
